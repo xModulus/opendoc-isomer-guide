@@ -1,7 +1,7 @@
-title: OpenDoc Template #----> Required
-remote_theme: opendocsg/opendoc-theme@v2
+title: Isomer Guide
+remote_theme: opendocsg/opendoc-theme@master
 timezone: Asia/Singapore
-repository: opendocsg/opendoc-template #----> Required
+repository: opendocsg/opendoc-isomer-guide
 plugins:
   - jekyll-include-cache
 baseurl: ''
@@ -13,15 +13,20 @@ fast_build: false
 offline: false
 preload_pages: true
 
-order: #----> Optional, order of pages in root
-  - README.md
-  - sample.md
-document_order: #----> Optional, order of documents
-  - Document 1
-  - # --> leave blank to show root pages
-  - AA Document 2
 styling_options:
   primary_brand_color: '#444'  #----> Optional, theme color
   logo_path: /assets/logo.png  #----> Optional, path to logo
   opendoc_logo_path: /assets/images/logo-full.png
   feedback_url: https://form.gov.sg/5cee3d46138e3200109244df #----> Optional, feedback url
+
+hide_toolbar:
+  sidebar: false
+  pdf: false
+  github: true
+
+folders:
+  - name: '/'
+    title: 'Isomer Guide'
+    subtitle: ''
+    order:
+      - 'sample.md'
