@@ -26,4 +26,5 @@ folders:
     title: Isomer Guide
     subtitle: ""
     order:
-      - sample.md
+      - get-started.md
+    
